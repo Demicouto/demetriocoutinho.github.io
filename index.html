@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYL1VH5W53"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FYL1VH5W53');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.7, maximum-scale=2.0, user-scalable=yes">
+    <title>Demétrio Coutinho | Engenharia de Software</title>
+    <link rel="alternate" type="application/rss+xml" title="Demétrio Coutinho RSS" href="rss.xml">
+
+    <!-- Theme init (prevents flash on reload) -->
+    <script>
+        (function() {
+            var t = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (Local File) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
+
+<!-- build:header-home:start -->
+<!-- Navbar -->
+<nav id="navbar-main" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">Demi<span class="text-primary">Couto</span>.dev</a>
+        <button class="navbar-toggler border-0 p-0" type="button" id="mobileMenuToggle" aria-label="Menu">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-3">
+                <li class="nav-item"><a class="nav-link px-3" href="#sobre" data-i18n="nav.about">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#techs" data-i18n="nav.technologies">Tecnologias</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="artigos/index.html" data-i18n="nav.blog">Artigos</a></li>
+                <li class="nav-item">
+                    <div class="navbar-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/demicouto" target="_blank" class="nav-icon-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/demetriocoutinho/" target="_blank" class="nav-icon-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="rss.xml" class="nav-icon-link" aria-label="RSS Feed" title="RSS Feed">
+                        <i class="fas fa-rss"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon theme-icon moon"></i>
+                        <i class="fas fa-sun theme-icon sun"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-primary px-4 py-2 rounded-pill fw-semibold" data-bs-toggle="modal" data-bs-target="#contactModal" data-i18n="nav.contact">
+                        Contato
+                    </button>
+                </li>
+                <li class="nav-item position-relative">
+                    <button class="language-selector" id="languageSelectorBtn" aria-label="Selecionar idioma">
+                        🇧🇷 <i class="fas fa-chevron-down ms-1"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a class="language-dropdown-item" data-lang="pt-BR">
+                            <span class="flag">🇧🇷</span>
+                            <span class="lang-name">Português</span>
+                            <i class="fas fa-check check-icon"></i>
+                        </a>
+                        <a class="language-dropdown-item" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span class="lang-name">English</span>
+                            <i class="fas fa-check check-icon"></i>
+                        </a>
+                        <a class="language-dropdown-item" data-lang="es">
+                            <span class="flag">🇪🇸</span>
+                            <span class="lang-name">Español</span>
+                            <i class="fas fa-check check-icon"></i>
+                        </a>
+                        <a class="language-dropdown-item" data-lang="zh">
+                            <span class="flag">🇨🇳</span>
+                            <span class="lang-name">中文</span>
+                            <i class="fas fa-check check-icon"></i>
+                        </a>
+                        <a class="language-dropdown-item" data-lang="de">
+                            <span class="flag">🇩🇪</span>
+                            <span class="lang-name">Deutsch</span>
+                            <i class="fas fa-check check-icon"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Sidebar -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<div class="mobile-menu-sidebar" id="mobileMenuSidebar">
+    <div class="mobile-menu-header">
+        <div>
+            <h5 class="fw-bold mb-0" data-i18n="mobile.menu">Menu</h5>
+            <small class="text-muted" data-i18n="mobile.navigation">Navegação</small>
+        </div>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="mobile-menu-body">
+        <nav class="mobile-menu-nav">
+            <a href="#sobre" class="mobile-menu-item">
+                <i class="fas fa-user me-2"></i><span data-i18n="nav.about">Sobre</span>
+            </a>
+            <a href="#techs" class="mobile-menu-item">
+                <i class="fas fa-code me-2"></i><span data-i18n="nav.technologies">Tecnologias</span>
+            </a>
+            <a href="#projetos" class="mobile-menu-item">
+                <i class="fas fa-folder-open me-2"></i><span data-i18n="nav.projects">Projetos</span>
+            </a>
+            <a href="#experiencia" class="mobile-menu-item">
+                <i class="fas fa-briefcase me-2"></i><span data-i18n="nav.experience">Experiência</span>
+            </a>
+            <a href="artigos/index.html" class="mobile-menu-item">
+                <i class="fas fa-newspaper me-2"></i><span data-i18n="nav.blog">Artigos</span>
+            </a>
+        </nav>
+
+        <div class="mobile-menu-social">
+            <a href="https://github.com/demicouto" target="_blank" class="mobile-social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <i class="fas fa-arrow-right ms-auto"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/demetriocoutinho/" target="_blank" class="mobile-social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+                <i class="fas fa-arrow-right ms-auto"></i>
+            </a>
+            <a href="rss.xml" class="mobile-social-link">
+                <i class="fas fa-rss"></i>
+                <span>RSS</span>
+                <i class="fas fa-arrow-right ms-auto"></i>
+            </a>
+        </div>
+
+        <div class="mobile-menu-footer">
+            <button class="mobile-theme-toggle-icon" id="mobileThemeToggle">
+                <i class="fas fa-moon theme-icon moon"></i>
+                <i class="fas fa-sun theme-icon sun"></i>
+            </button>
+            <button class="btn btn-primary flex-grow-1 rounded-pill py-2 fw-semibold" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <i class="fas fa-paper-plane me-2"></i><span data-i18n="nav.contact">Contato</span>
+            </button>
+            <div class="mobile-language-selector-wrapper position-relative">
+                <button class="mobile-language-toggle-icon" id="mobileLanguageBtn">
+                    <span class="flag-emoji">🇧🇷</span>
+                </button>
+                <div class="mobile-language-dropdown" id="mobileLanguageDropdown">
+                    <a class="mobile-language-dropdown-item" data-lang="pt-BR">
+                        <span class="flag">🇧🇷</span>
+                        <span class="lang-name">Português</span>
+                        <i class="fas fa-check check-icon"></i>
+                    </a>
+                    <a class="mobile-language-dropdown-item" data-lang="en">
+                        <span class="flag">🇺🇸</span>
+                        <span class="lang-name">English</span>
+                        <i class="fas fa-check check-icon"></i>
+                    </a>
+                    <a class="mobile-language-dropdown-item" data-lang="es">
+                        <span class="flag">🇪🇸</span>
+                        <span class="lang-name">Español</span>
+                        <i class="fas fa-check check-icon"></i>
+                    </a>
+                    <a class="mobile-language-dropdown-item" data-lang="zh">
+                        <span class="flag">🇨🇳</span>
+                        <span class="lang-name">中文</span>
+                        <i class="fas fa-check check-icon"></i>
+                    </a>
+                    <a class="mobile-language-dropdown-item" data-lang="de">
+                        <span class="flag">🇩🇪</span>
+                        <span class="lang-name">Deutsch</span>
+                        <i class="fas fa-check check-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- build:header-home:end -->
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="display-3 mb-3" data-i18n="hero.name">Demétrio Coutinho</h1>
+                <p class="lead text-secondary mb-4 fs-4" data-i18n="hero.title">Engenharia de Software | Full Stack Developer</p>
+
+                <p class="mb-5 text-muted mx-auto" style="max-width: 600px;" data-i18n="hero.description">
+                    Desenvolvedor apaixonado por criar soluções robustas com Java.
+                </p>
+
+                <div class="d-flex justify-content-center gap-3 flex-column flex-sm-row">
+                    <a href="#projetos" class="btn btn-primary btn-lg rounded-pill shadow-sm px-5 px-sm-5 btn-sm-lg" data-i18n="hero.viewProjects">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-outline-secondary btn-lg rounded-pill px-5 px-sm-5 btn-sm-lg" data-i18n="hero.contact">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre Mim -->
+<section id="sobre" class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4" data-i18n="about.title">Sobre Mim</h2>
+                <p class="text-secondary mb-4" data-i18n="about.p1">
+                    Atualmente cursando o quarto termo de Engenharia de Software, minha trajetória é marcada pela disciplina e pela busca constante por excelência.
+                <p class="text-secondary" data-i18n="about.p2" data-i18n-html>
+                
+                </p>
+
+                <div class="row mt-4 g-3">
+                    <div class="col-sm-6">
+                        <div class="info-card d-flex align-items-center gap-3 p-3 rounded"
+                             data-bs-toggle="tooltip" 
+                             data-bs-placement="top" 
+                             data-bs-title="Universidade de Pernambuco"
+                             data-i18n-tooltip="tooltip.university"
+                             style="cursor: pointer;">
+                            <i class="fas fa-graduation-cap text-primary fs-3"></i>
+                            <div class="d-flex flex-column">
+                                <h6 class="mb-0 fw-bold" data-i18n="about.university">UPE</h6>
+                                <small class="text-muted" data-i18n="about.universityDesc">Eng. Software (2028)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- Card Interativo de Certificados -->
+                        <div class="info-card info-card-hover d-flex align-items-center gap-3 p-3 rounded cursor-pointer" data-bs-toggle="modal" data-bs-target="#certsModal">
+                            <i class="fas fa-award text-warning fs-3"></i>
+                            <div class="d-flex flex-column">
+                                <h6 class="mb-0 fw-bold" data-i18n="about.certificates">Certificados & Cursos</h6>
+                                <div class="d-flex align-items-center text-nowrap">
+                                    <small class="text-muted" data-i18n="about.viewCertificates">Ver Lista Completa</small>
+                                    <i class="fas fa-arrow-right text-muted ms-1" style="font-size: 0.7rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Ilustração abstrata com CSS/Bootstrap -->
+                <div class="info-highlight-card position-relative p-4 rounded-4">
+                    <div class="row g-3">
+                        <div class="col-6 text-center">
+                            <h2 class="fw-bold text-primary display-4" 
+                                data-bs-toggle="tooltip" 
+                                data-bs-placement="top" 
+                                data-bs-title="Nível avançado de inglês segundo o Quadro Europeu Comum de Referência para Línguas"
+                                data-i18n-tooltip="tooltip.englishLevel"
+                                style="cursor: pointer;">B2</h2>
+                            <p class="text-muted small fw-bold" data-i18n="about.englishLevel">INGLÊS INTERMEDIÁRIO</p>
+                        </div>
+                        <div class="col-6 text-center highlight-divider ps-3">
+                            <h2 class="fw-bold text-success display-4"
+                                data-bs-toggle="tooltip" 
+                                data-bs-placement="top" 
+                                data-bs-title="Cursando o 4º periodo da faculdade de Engenharia de Software na UNIFIO"
+                                data-i18n-tooltip="tooltip.degree"
+                                style="cursor: pointer;">4º</h2>
+                            <p class="text-muted small fw-bold" data-i18n="about.degree">BACHARELADO ENG. SOFTWARE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section id="techs" class="py-5">
+    <div class="container">
+        <!-- Stack Principal -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" data-i18n="tech.title">Stack Tecnológico</h2>
+            <p class="text-muted" data-i18n="tech.subtitle">Ferramentas que utilizo no dia a dia. Passe o mouse para saber mais.</p>
+        </div>
+
+        <div class="techs-expandable-wrapper" id="techsWrapper">
+            <div class="row g-3 justify-content-center mb-5">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-java tech-icon text-warning"></i>
+                        <h6 class="tech-name">Java</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.java">Linguagem robusta para sistemas backend corporativos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-js tech-icon text-warning"></i>
+                        <h6 class="tech-name">JavaScript</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.javascript">Interatividade no frontend e lógica no backend.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-database tech-icon text-secondary"></i>
+                        <h6 class="tech-name">SQL</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.sql">Modelagem e consulta eficiente de bancos de dados.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-database tech-icon text-secondary"></i>
+                        <h6 class="tech-name">PostgreSQL</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.postgresql">Sistema de gerenciamento de banco de dados relacional.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-html5 tech-icon text-danger"></i>
+                        <h6 class="tech-name">HTML/CSS</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.html">Estrutura semântica e estilização visual responsiva.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-git-alt tech-icon text-danger"></i>
+                        <h6 class="tech-name">Git</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.git">Controle de versão e colaboração em equipe.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-docker tech-icon text-info"></i>
+                        <h6 class="tech-name">Docker</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.docker">Containerização para ambientes de deploy consistentes.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divisor -->
+            <div class="section-divider">
+                <span data-i18n="tech.divider">Aprendendo Agora</span>
+            </div>
+
+            <!-- Aprendendo Agora -->
+            <div class="row g-3 justify-content-center">    
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-shield-halved tech-icon text-success"></i>
+                        <h6 class="tech-name">Segurança</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.security">Proteção de dados e vulnerabilidades.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-neos tech-icon "></i>
+                        <h6 class="tech-name">Next.js</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.nextjs">Framework para desenvolvimento de aplicações React server-side.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-brain tech-icon text-info"></i>
+                        <h6 class="tech-name">IA</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.ai">Integração com LLMs e ferramentas de GenAI.</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-leaf tech-icon text-success"></i>
+                        <h6 class="tech-name">Spring Boot</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.spring">Framework Spring Boot para APIs REST e serviços backend escaláveis.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-users-gear tech-icon text-secondary"></i>
+                        <h6 class="tech-name">Agile</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.agile">Metodologias ágeis (Scrum/Kanban) para projetos.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-5">
+            <button id="showMoreTechsBtn" class="btn btn-outline-primary rounded-pill px-5" type="button">
+                <span data-i18n="tech.showMore">Ver Mais Tecnologias</span>
+                <i class="fas fa-chevron-down ms-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5" data-i18n="projects.title">Projetos</h2>
+
+        <div class="projects-expandable-wrapper" id="projectsWrapper">
+            <div class="row g-4">
+
+                <!-- Projeto Almanaque -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="custom-card p-4 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="bg-warning bg-opacity-10 text-primary p-3 rounded-3">
+                                <i class="fas fa-book fa-2x"></i>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Demicouto/Projeto-Almanaque" target="_blank" class="text-secondary"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold" data-i18n="projects.almanaque.title">Almanaque Project</h4>
+                        <p class="text-muted small flex-grow-1" data-i18n="projects.almanaque.description">Um sistema de gerenciamento de biblioteca desenvolvido em Java (CLI) com persistência de dados no PostgreSQL. O projeto segue boas práticas de arquitetura em camadas e utiliza o padrão MVC (Model, View e Controller).</p>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark border">Java 23</span>
+                            <span class="badge bg-light text-dark border">PostgreSQL</span>
+                            <span class="badge bg-light text-dark border">GIT e GITHUB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Pet-Prime -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="custom-card p-4 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="bg-warning bg-opacity-10 text-primary p-3 rounded-3">
+                                <i class="fas fa-book fa-2x"></i>
+                            </div>
+                            <div>
+                                <a href="https://github.com/ronyfonseca/Pet-Prime" target="_blank" class="text-secondary"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold" data-i18n="projects.petPrime.title">Pet-Prime</h4>
+                        <p class="text-muted small flex-grow-1" data-i18n="projects.petPrime.description">Um sistema de terminal em Java puro para gestão de um PetShop completo, com funcionalidades voltadas para controle de funcionários, produtos, atendimentos e serviços veterinários. Ênfase no aprendizado de programação orientada a objetos.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark border">Java 17+</span>
+                            <span class="badge bg-light text-dark border">POO</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BibSync -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="custom-card p-4 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="bg-warning bg-opacity-10 text-primary p-3 rounded-3">
+                                <i class="fas fa-book fa-2x"></i>
+                            </div>
+                            <a href="https://github.com/ronyfonseca/BibSync" target="_blank" class="text-secondary"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="fw-bold" data-i18n="projects.BibSync.title">BibSync</h4>
+                        <p class="text-muted small flex-grow-1" data-i18n="projects.BibSync.description">O BibSync é uma ferramenta desenvolvida em Java (JDK 25) para importação, análise e busca em bases bibliográficas .bib provenientes de repositórios científicos como IEEE e MDPI. foi desenvolvido utilizando padrões clássicos de engenharia de software, garantindo modularidade e extensibilidade.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark border">Java 25</span>
+                            <span class="badge bg-light text-dark border">Design Patterns</span>
+                            <span class="badge bg-light text-dark border">GIT e GITHUB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="drawer-mask"></div>
+        </div>
+
+        <!-- Show More Button -->
+        <div class="col-12 text-center mt-4">
+            <button id="showMoreProjectsBtn" class="btn btn-outline-primary btn-lg rounded-pill px-5" type="button">
+                <span data-i18n="projects.showMore">Ver Mais Projetos</span>
+                <i class="fas fa-chevron-down ms-2"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experiência -->
+<section id="experiencia" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5" data-i18n="experience.title">Experiência Profissional</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="experience-expandable-wrapper" id="experienceWrapper">
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <span class="badge bg-secondary mb-2">2025-2026</span>
+                        <span class="badge bg-primary mb-2" data-i18n="experience.current">Atual</span>
+                        <h5 class="fw-bold mb-1" data-i18n="experience.nap.company">Auxiliar Pedagógico</h5>
+                        <p class="text-secondary fw-medium mb-2" data-i18n="experience.nap.position">Prestador de serviços</p>
+                        <p class="text-muted small" data-i18n="experience.nap.description">
+                            Auxilio em atividades de apoio pedagógico e suporte logístico.
+                        </p>
+                    </div>
+
+                <!-- Show More Button -->
+                <div class="text-center mt-4">
+                    <button id="showMoreExperienceBtn" class="btn btn-outline-primary rounded-pill px-5" type="button">
+                        <span data-i18n="experience.showMore">Ver Mais Experiências</span>
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:latest-posts:start -->
+<section id="ultimos-posts" class="py-5 bg-white">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-5">
+            <div class="latest-posts-header">
+                <h2 class="fw-bold mb-3" data-i18n="blog.latestTitle">Últimos Artigos</h2>
+                <p class="text-muted mb-0" data-i18n="blog.latestSubtitle">Os artigos mais recentes sobre estudos, projetos e aprendizados da minha jornada em software.</p>
+            </div>
+            <a href="artigos/index.html" class="btn btn-outline-primary rounded-pill px-4 align-self-lg-center" data-i18n="blog.viewAll">Ver todos os artigos</a>
+        </div>
+
+
+
+        <div class="text-center mt-4">
+            <button id="showMoreLatestPostsBtn" class="btn btn-outline-primary rounded-pill px-5" type="button">
+                <span data-i18n="blog.showMore">Ver Mais Artigos</span>
+                <i class="fas fa-chevron-down ms-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- build:latest-posts:end -->
+
+<!-- Contact Section -->
+<section id="contato" class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4" style="color: var(--text-primary);" data-i18n="footer.title">Vamos conversar?</h2>
+        <p class="mb-5 text-secondary" data-i18n="footer.description">Estou aberto a oportunidades em desenvolvimento web (Backend/Fullstack).</p>
+
+        <div class="d-flex justify-content-center flex-column flex-sm-row gap-3 mb-0">
+            <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <i class="fas fa-envelope me-2"></i><span data-i18n="footer.sendEmail">Enviar Email</span>
+            </button>
+            <a href="https://www.linkedin.com/in/demetrio/" target="_blank" class="btn btn-outline-primary px-4">
+                <i class="fab fa-linkedin me-2"></i><span data-i18n="footer.linkedin">LinkedIn</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- build:footer:start -->
+<!-- Footer -->
+<footer class="py-5 text-center">
+    <div class="container">
+        <div class="row pt-3 text-secondary small">
+            <div class="col-md-6 text-md-start" data-i18n="footer.copyright">
+                &copy; 2026 Demétrio Coutinho - All Rights Reserved
+            </div>
+            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                <a href="https://github.com/Demicouto/demetriocoutinho.github.io" class="footer-meta-link">
+                    <i class="fab fa-github"></i>
+                    <span data-i18n="footer.sourceCode">Código do site</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- build:footer:end -->
+
+<!-- Certificados Modal -->
+<div class="modal fade" id="certsModal" tabindex="-1" aria-labelledby="certsModalLabel">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold d-flex align-items-center text-primary" id="certsModalLabel">
+                    <span data-i18n="certs.title">Certificados & Cursos</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="list-group list-group-flush certs-list border-0">
+                    <!-- Facepe -->
+                    <div class="list-group-item p-3 mb-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-1 fw-bold" data-i18n="certs.facepe">Programa de Formação tecnologias 4.0: Soluções com IA.</h6>
+                                <small class="text-muted" data-i18n="certs.facepe.org">ESCOLA POLITÉCNICA DA UNIVERSIDADE DE PERNAMBUCO</small>
+                            </div>
+                            <a href="assets/certificates/facepe.pdf" target="_blank" rel="noopener"
+                               class="btn btn-outline-primary btn-view" title="Visualizar Certificado">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- build:contact-modal:start -->
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-bold d-flex align-items-center text-primary" id="contactModalLabel">
+                    <i class="fas fa-paper-plane me-2"></i><span data-i18n="contact.title">Enviar Mensagem</span>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="contactForm" action="https://formspree.io/f/xjgjdrgy" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold text-muted small mb-1" data-i18n="contact.emailLabel">Seu Email</label>
+                        <input type="email" class="form-control form-control-lg border-0 bg-light shadow-sm" name="email" id="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="nome@exemplo.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label fw-bold text-muted small mb-1" data-i18n="contact.messageLabel">Mensagem</label>
+                        <textarea class="form-control form-control-lg border-0 bg-light shadow-sm" name="message" id="message" rows="4" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Como posso ajudar?" required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg fw-bold rounded-pill shadow-sm" data-i18n="contact.sendButton">Enviar Agora</button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="text-center py-4 d-none">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success fa-4x animate__animated animate__bounceIn"></i>
+                    </div>
+                    <h4 class="fw-bold text-success mb-2" data-i18n="contact.successTitle">Mensagem Enviada!</h4>
+                    <p class="text-muted" data-i18n="contact.successMessage">Obrigado pelo contato. Retornarei em breve.</p>
+                    <button type="button" class="btn btn-outline-success rounded-pill mt-3 px-5" data-bs-dismiss="modal" data-i18n="contact.close">Fechar</button>
+                </div>
+
+                <div id="errorMessage" class="text-center py-4 d-none">
+                    <div class="mb-4">
+                        <i class="fas fa-exclamation-circle text-danger fa-4x"></i>
+                    </div>
+                    <h4 class="fw-bold text-danger mb-2" data-i18n="contact.errorTitle">Erro ao enviar</h4>
+                    <p class="text-muted" data-i18n="contact.errorMessage">Houve um problema. Tente novamente ou use meu email direto.</p>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 px-5" onclick="resetForm()" data-i18n="contact.tryAgain">Tentar Novamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- build:contact-modal:end -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS (Local File) -->
+<script src="assets/js/script.js"></script>
+
+<!-- i18n JS (Local File) - Load after main script to ensure tooltips are initialized -->
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>
