@@ -66,7 +66,7 @@
                     <div class="navbar-divider"></div>
                 </li>
                 <li class="nav-item">
-                    <a href="https://github.com/demicouto" target="_blank" class="nav-icon-link" aria-label="GitHub">
+                    <a href="https://github.com/Demicouto" target="_blank" class="nav-icon-link" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
@@ -160,7 +160,7 @@
         </nav>
 
         <div class="mobile-menu-social">
-            <a href="https://github.com/demicouto" target="_blank" class="mobile-social-link">
+            <a href="https://github.com/Demicouto" target="_blank" class="mobile-social-link">
                 <i class="fab fa-github"></i>
                 <span>GitHub</span>
                 <i class="fas fa-arrow-right ms-auto"></i>
@@ -334,6 +334,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <i class="fab fa-js tech-icon text-warning"></i>
@@ -343,6 +344,37 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-node-js tech-icon text-success"></i>
+                        <h6 class="tech-name">Node.js</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.nodejs">Ambiente de execução JavaScript para APIs e aplicações backend escaláveis.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-python tech-icon text-primary"></i>
+                        <h6 class="tech-name">Python</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.python">Linguagem versátil para automação, análise de dados e desenvolvimento backend.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fab fa-neos tech-icon "></i>
+                        <h6 class="tech-name">Next.js</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.nextjs">Framework para desenvolvimento de aplicações React server-side.</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <i class="fas fa-database tech-icon text-secondary"></i>
@@ -372,6 +404,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <i class="fab fa-git-alt tech-icon text-danger"></i>
@@ -381,6 +414,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <i class="fab fa-docker tech-icon text-info"></i>
@@ -405,16 +439,6 @@
                         <h6 class="tech-name">Segurança</h6>
                         <div class="tech-overlay">
                             <span class="tech-desc" data-i18n="tech.security">Proteção de dados e vulnerabilidades.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tech-card">
-                        <i class="fab fa-neos tech-icon "></i>
-                        <h6 class="tech-name">Next.js</h6>
-                        <div class="tech-overlay">
-                            <span class="tech-desc" data-i18n="tech.nextjs">Framework para desenvolvimento de aplicações React server-side.</span>
                         </div>
                     </div>
                 </div>
@@ -538,6 +562,28 @@
                     </div>
                 </div>
 
+                <!-- Marie Claire Doceria -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="custom-card p-4 d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="bg-warning bg-opacity-10 text-primary p-3 rounded-3">
+                                <i class="fas fa-cake-candles fa-2x"></i>
+                            </div>
+                            <a href="https://github.com/Demicouto/MarieClaire-Doceria" target="_blank" class="text-secondary" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="fw-bold" data-i18n="projects.marieclaire.title">Marie Claire Doceria</h4>
+                        <p class="text-muted small flex-grow-1" data-i18n="projects.marieclaire.description">Sistema full-stack para catálogo, carrinho, checkout autenticado e gestão administrativa de uma doceria, com foco em gestão de pedidos e informações pelo WhatsApp e controle operacional.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark border">Next.js</span>
+                            <span class="badge bg-light text-dark border">Node.js</span>
+                            <span class="badge bg-light text-dark border">Express</span>
+                            <span class="badge bg-light text-dark border">Prisma</span>
+                            <span class="badge bg-light text-dark border">PostgreSQL</span>
+                            <span class="badge bg-light text-dark border">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="drawer-mask"></div>
         </div>
@@ -596,8 +642,34 @@
             <a href="artigos/index.html" class="btn btn-outline-primary rounded-pill px-4 align-self-lg-center" data-i18n="blog.viewAll">Ver todos os artigos</a>
         </div>
 
-
-
+        <div class="latest-posts-expandable-wrapper" id="latestPostsWrapper">
+            <div class="row g-4">
+<div class="col-md-6 col-lg-4 latest-post-item">
+                    <article class="custom-card latest-post-card p-4 d-flex flex-column">
+                        <span class="latest-post-date">05 de jul. de 2026</span>
+                        <h4 class="fw-bold mt-3 mb-3 latest-post-title">MarieClaire Doceria: construindo um sistema completo para uma doceria real</h4>
+                        <p class="text-muted small flex-grow-1 mb-4">Desenvolver a MarieClaire Doceria foi um exercício de transformar uma necessidade de negócio em um produto web completo. A ideia não era apenas criar uma vitrine de produtos, mas desenhar...</p>
+                        <a href="artigos/post.html?id=marieclaire-doceria" class="btn btn-outline-primary rounded-pill align-self-start" data-i18n="blog.readPost">Ler artigo</a>
+                    </article>
+                </div>
+<div class="col-md-6 col-lg-4 latest-post-item">
+                    <article class="custom-card latest-post-card p-4 d-flex flex-column">
+                        <span class="latest-post-date">26 de abr. de 2026</span>
+                        <h4 class="fw-bold mt-3 mb-3 latest-post-title">Roadmap Java Backend: Minha Jornada</h4>
+                        <p class="text-muted small flex-grow-1 mb-4">Compartilhando minha rotina de estudos, o prompt que utilizo para aprender com IA e a prática de código baseada no roadmap de mercado.</p>
+                        <a href="artigos/post.html?id=roadmap-java" class="btn btn-outline-primary rounded-pill align-self-start" data-i18n="blog.readPost">Ler artigo</a>
+                    </article>
+                </div>
+<div class="col-md-6 col-lg-4 latest-post-item">
+                    <article class="custom-card latest-post-card p-4 d-flex flex-column">
+                        <span class="latest-post-date">26 de abr. de 2026</span>
+                        <h4 class="fw-bold mt-3 mb-3 latest-post-title">Post de Teste</h4>
+                        <p class="text-muted small flex-grow-1 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="artigos/post.html?id=post-teste" class="btn btn-outline-primary rounded-pill align-self-start" data-i18n="blog.readPost">Ler artigo</a>
+                    </article>
+                </div>
+            </div>
+        </div>
         <div class="text-center mt-4">
             <button id="showMoreLatestPostsBtn" class="btn btn-outline-primary rounded-pill px-5" type="button">
                 <span data-i18n="blog.showMore">Ver Mais Artigos</span>

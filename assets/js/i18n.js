@@ -46,6 +46,8 @@ const translations = {
         'tech.nextjs': 'Framework para desenvolvimento de aplicações React server-side.',
         'tech.java': 'Linguagem robusta para sistemas backend corporativos.',
         'tech.javascript': 'Interatividade no frontend e lógica no backend.',
+        'tech.nodejs': 'Ambiente de execução JavaScript para APIs e aplicações backend escaláveis.',
+        'tech.python': 'Linguagem versátil para automação, análise de dados e desenvolvimento backend.',
         'tech.html': 'Estrutura semântica e estilização e layout responsivo para aplicações web.',
         'tech.sql': 'Modelagem e consulta eficiente de bancos de dados.',
         'tech.git': 'Controle de versão e colaboração em equipe.',
@@ -66,6 +68,8 @@ const translations = {
         'projects.petPrime.description': 'Um sistema de terminal em Java puro para gestão de um PetShop completo, com funcionalidades voltadas para controle de funcionários, produtos, atendimentos e serviços veterinários. Ênfase no aprendizado de programação orientada a objetos.',
         'projects.BibSync.title': 'BibSync',
         'projects.BibSync.description': 'O BibSync é uma ferramenta desenvolvida em Java (JDK 25) para importação, análise e busca em bases bibliográficas .bib provenientes de repositórios científicos como IEEE e MDPI. foi desenvolvido utilizando padrões clássicos de engenharia de software, garantindo modularidade e extensibilidade.',
+        'projects.marieclaire.title': 'Marie Claire Doceria',
+        'projects.marieclaire.description': 'Sistema full-stack para catálogo, carrinho, checkout autenticado e gestão administrativa de uma doceria, com foco em pedidos pelo WhatsApp e controle operacional.',
         
         // Experience Section
         'experience.title': 'Experiência Profissional',
@@ -160,6 +164,8 @@ const translations = {
         'tech.divider': 'Currently Learning',
         'tech.java': 'Robust language for corporate backend systems.',
         'tech.javascript': 'Frontend interactivity and backend logic.',
+        'tech.nodejs': 'JavaScript runtime for APIs and scalable backend applications.',
+        'tech.python': 'Versatile language for automation, data analysis, and backend development.',
         'tech.html': 'Semantic structure and responsive visual styling.',
         'tech.sql': 'Efficient database modeling and querying.',
         'tech.git': 'Version control and team collaboration.',
@@ -179,6 +185,8 @@ const translations = {
         'projects.petPrime.description': 'Pure Java terminal system for managing a complete PetShop, with features for employee, product, service, and veterinary management. Focus on learning object-oriented programming.',
         'projects.BibSync.title': 'BibSync',
         'projects.BibSync.description': 'Tool developed in Java (JDK 25) for importing, analyzing, and searching bibliographic .bib databases from scientific repositories like IEEE and MDPI. Developed using classic software engineering patterns, ensuring modularity and extensibility.',
+        'projects.marieclaire.title': 'Marie Claire Doceria',
+        'projects.marieclaire.description': 'Full-stack system for a bakery catalog, cart, authenticated checkout, and admin management, with focus on WhatsApp orders and operational control.',
         
         // Experience Section
         'experience.title': 'Professional Experience',
@@ -264,6 +272,8 @@ const translations = {
         'tech.divider': 'Aprendiendo Ahora',
         'tech.java': 'Lenguaje robusto para sistemas backend corporativos.',
         'tech.javascript': 'Interactividad en frontend y lógica en backend.',
+        'tech.nodejs': 'Entorno de ejecución de JavaScript para APIs y aplicaciones backend escalables.',
+        'tech.python': 'Lenguaje versátil para automatización, análisis de datos y desarrollo backend.',
         'tech.html': 'Estructura semántica y estilización visual responsiva.',
         'tech.sql': 'Modelado y consulta eficiente de bases de datos.',
         'tech.git': 'Control de versiones y colaboración en equipo.',
@@ -282,6 +292,8 @@ const translations = {
         'projects.petPrime.description': 'Sistema de terminal en Java puro para la gestión completa de una PetShop, con funcionalidades para el control de empleados, productos, servicios y gestión veterinaria. Énfasis en el aprendizaje de programación orientada a objetos.',
         'projects.BibSync.title': 'BibSync',
         'projects.BibSync.description': 'Herramienta desarrollada en Java (JDK 25) para importación, análisis y búsqueda en bases de datos bibliográficas .bib de repositorios científicos como IEEE y MDPI. Desarrollado utilizando patrones clásicos de ingeniería de software, garantizando modularidad y extensibilidad.',
+        'projects.marieclaire.title': 'Marie Claire Doceria',
+        'projects.marieclaire.description': 'Sistema full-stack para catálogo, carrito, checkout autenticado y gestión administrativa de una docería, con foco en pedidos por WhatsApp y control operativo.',
         
         // Experience Section
         'experience.title': 'Experiencia Profesional',
@@ -367,6 +379,8 @@ const translations = {
         'tech.divider': '正在学习',
         'tech.java': '用于企业后端系统的强大语言。',
         'tech.javascript': '前端交互和后端逻辑。',
+        'tech.nodejs': '用于 API 和可扩展后端应用的 JavaScript 运行时。',
+        'tech.python': '适用于自动化、数据分析和后端开发的多功能语言。',
         'tech.html': '语义结构和响应式视觉样式。',
         'tech.sql': '高效的数据库建模和查询。',
         'tech.git': '版本控制和团队协作。',
@@ -385,6 +399,8 @@ const translations = {
         'projects.petPrime.description': '用纯 Java 编写的终端系统，用于管理完整的宠物店，具有员工、产品、服务和兽医管理功能。重点放在学习面向对象编程。',
         'projects.BibSync.title': 'BibSync',
         'projects.BibSync.description': '使用 Java (JDK 25) 开发的工具，用于从 IEEE 和 MDPI 等科学存储库导入、分析和搜索书目 .bib 数据库。使用经典软件工程模式开发，确保模块化和可扩展性。',
+        'projects.marieclaire.title': 'Marie Claire Doceria',
+        'projects.marieclaire.description': '用于甜品店目录、购物车、认证结账和后台管理的全栈系统，重点支持 WhatsApp 下单和运营控制。',
         
         // Experience Section
         'experience.title': '专业经验',
@@ -470,6 +486,8 @@ const translations = {
         'tech.divider': 'Derzeit lerne ich',
         'tech.java': 'Robuste Sprache für Unternehmens-Backend-Systeme.',
         'tech.javascript': 'Frontend-Interaktivität und Backend-Logik.',
+        'tech.nodejs': 'JavaScript-Laufzeitumgebung für APIs und skalierbare Backend-Anwendungen.',
+        'tech.python': 'Vielseitige Sprache für Automatisierung, Datenanalyse und Backend-Entwicklung.',
         'tech.html': 'Semantische Struktur und responsives visuelles Styling.',
         'tech.sql': 'Effiziente Datenbankmodellierung und -abfrage.',
         'tech.git': 'Versionskontrolle und Teamzusammenarbeit.',
@@ -488,6 +506,8 @@ const translations = {
         'projects.petPrime.description': 'Reines Java-Terminalsystem zur Verwaltung einer kompletten Tierpflege mit Funktionen für Mitarbeiter-, Produkt-, Service- und Veterinärverwaltung. Fokus auf das Erlernen der objektorientierten Programmierung.',
         'projects.BibSync.title': 'BibSync',
         'projects.BibSync.description': 'Mit Java (JDK 25) entwickeltes Tool zum Importieren, Analysieren und Suchen in bibliografischen .bib-Datenbanken aus wissenschaftlichen Repositorys wie IEEE und MDPI. Entwickelt mit klassischen Software-Engineering-Mustern und gewährleistet Modularität und Erweiterbarkeit.',
+        'projects.marieclaire.title': 'Marie Claire Doceria',
+        'projects.marieclaire.description': 'Full-Stack-System für Katalog, Warenkorb, authentifizierten Checkout und Verwaltungsfunktionen einer Konditorei mit Fokus auf WhatsApp-Bestellungen und operative Steuerung.',
         
         // Experience Section
         'experience.title': 'Berufserfahrung',
@@ -664,7 +684,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 desktopDropdown.classList.remove('show');
             }
             if (mobileDropdown) {
-                mobileDropdown.classList.remove('show');    
+                mobileDropdown.classList.remove('show');
             }
         });
     });

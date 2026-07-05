@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Demétrio Coutinho</title>
-    <link>https://demetriocoutinho.github.io</link>
+    <title>Demétrio coutinho</title>
+    <link>???</link>
     <description>Artigos sobre estudos, projetos e aprendizados da minha jornada em software.</description>
     <language>pt-BR</language>
-    <atom:link href="https://demetriocoutinho.github.io/rss.xml" rel="self" type="application/rss+xml" />
-
+    <atom:link href="???/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+      <title>MarieClaire Doceria: construindo um sistema completo para uma doceria real</title>
+      <link>???/artigos/post.html?id=marieclaire-doceria</link>
+      <guid>???/artigos/post.html?id=marieclaire-doceria</guid>
+      <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Desenvolver a MarieClaire Doceria foi um exercício de transformar uma necessidade de negócio em um produto web completo. A ideia não era apenas criar uma vitrine de produtos, mas desenhar...</description>
+    </item>
 <item>
       <title>Roadmap Java Backend: Minha Jornada</title>
-      <link>https://demetriocoutinho.github.io/artigos/post.html?id=roadmap-java</link>
-      <guid>https://demetriocoutinho.github.io/artigos/post.html?id=roadmap-java</guid>
-      <pubDate>Sat, 04 Jan 2026 12:00:00 GMT</pubDate>
+      <link>???/artigos/post.html?id=roadmap-java</link>
+      <guid>???/artigos/post.html?id=roadmap-java</guid>
+      <pubDate>Sun, 26 Apr 2026 12:00:00 GMT</pubDate>
       <description>Compartilhando minha rotina de estudos, o prompt que utilizo para aprender com IA e a prática de código baseada no roadmap de mercado.</description>
     </item>
 <item>
       <title>Post de Teste</title>
-      <link>https://demetriocoutinho.github.io/artigos/post.html?id=post-teste</link>
-      <guid>https://demetriocoutinho.github.io/artigos/post.html?id=post-teste</guid>
-      <pubDate>Fri, 26 Apr 2026 12:00:00 GMT</pubDate>
+      <link>???/artigos/post.html?id=post-teste</link>
+      <guid>???/artigos/post.html?id=post-teste</guid>
+      <pubDate>Sun, 26 Apr 2026 12:00:00 GMT</pubDate>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
     </item>
   </channel>

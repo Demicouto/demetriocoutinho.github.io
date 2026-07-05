@@ -1,5 +1,12 @@
 [
     {
+        "id": "marieclaire-doceria",
+        "title": "MarieClaire Doceria: construindo um sistema completo para uma doceria real",
+        "date": "2026-07-05",
+        "excerpt": "Desenvolver a MarieClaire Doceria foi um exercício de transformar uma necessidade de negócio em um produto web completo. A ideia não era apenas criar uma vitrine de produtos, mas desenhar...",
+        "file": "2026/07/05/marieclaire-doceria/index.md"
+    },
+    {
         "id": "roadmap-java",
         "title": "Roadmap Java Backend: Minha Jornada",
         "date": "2026-04-26",
