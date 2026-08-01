@@ -107,6 +107,8 @@ const translations = {
         'certs.title': 'Certificados & Cursos',
         'certs.facepe': 'Programa de Formação tecnologias 4.0: Soluções com IA.',
         'certs.facepe.org': 'ESCOLA POLITÉCNICA DA UNIVERSIDADE DE PERNAMBUCO',
+        'certs.efset': 'Certificado EF SET',
+        'certs.efset.org': 'EF Standard English Test',
         'certs.info': 'Clique no ícone para visualizar o certificado',
         
         // Mobile Menu
@@ -223,6 +225,8 @@ const translations = {
         'certs.title': 'Certificates & Courses',
         'certs.facepe': 'Technology Training Program 4.0: AI Solutions.',
         'certs.facepe.org': 'POLYTECHNIC SCHOOL OF PERNAMBUCO UNIVERSITY',
+        'certs.efset': 'EF SET Certificate',
+        'certs.efset.org': 'EF Standard English Test',
         'certs.info': 'Click the icon to view the certificate',
         
         // Mobile Menu
@@ -330,6 +334,8 @@ const translations = {
         'certs.title': 'Certificados y Cursos',
         'certs.facepe': 'Programa de Formación tecnologías 4.0: Soluciones con IA.',
         'certs.facepe.org': 'ESCUELA POLITÉCNICA DE LA UNIVERSIDAD DE PERNAMBUCO',
+        'certs.efset': 'Certificado EF SET',
+        'certs.efset.org': 'EF Standard English Test',
         'certs.info': 'Haz clic en el icono para ver el certificado',
         
         // Mobile Menu
@@ -437,6 +443,8 @@ const translations = {
         'certs.title': '证书与课程',
         'certs.facepe': '技术培训计划 4.0：人工智能解决方案。',
         'certs.facepe.org': '伯南布哥大学理工学院',
+        'certs.efset': 'EF SET 证书',
+        'certs.efset.org': 'EF 标准英语测试',
         'certs.info': '点击图标查看证书',
         
         // Mobile Menu
@@ -544,6 +552,8 @@ const translations = {
         'certs.title': 'Zertifikate & Kurse',
         'certs.facepe': 'Schulungsprogramm für Technologien 4.0: KI-Lösungen.',
         'certs.facepe.org': 'POLYTECHNIK DER UNIVERSITÄT PERNAMBUCO',
+        'certs.efset': 'EF SET Zertifikat',
+        'certs.efset.org': 'EF Standard English Test',
         'certs.info': 'Klicken Sie auf das Symbol, um das Zertifikat anzuzeigen',
         
         // Mobile Menu
