@@ -29,7 +29,7 @@ const translations = {
         
         // About Section
         'about.title': 'Sobre Mim',
-        'about.p1': 'Atualmente cursando o quarto termo de Engenharia de Software, minha trajetória é marcada pela disciplina e pela busca constante por excelência.',
+        'about.p1': 'Atualmente cursando o quinto período de Engenharia de Software, minha trajetória é marcada pela disciplina e pela busca constante por excelência.',
         'about.universityDesc': 'Eng. Software (2028)',
         'about.certificates': 'Certificados & Cursos',
         'about.viewCertificates': 'Ver Lista Completa',
@@ -44,6 +44,8 @@ const translations = {
         'tech.divider': 'Aprendendo Agora',
         'tech.postgresql': 'Sistema de gerenciamento de banco de dados relacional.',
         'tech.nextjs': 'Framework para desenvolvimento de aplicações React server-side.',
+        'tech.react': 'Biblioteca JavaScript para construir interfaces de usuário reativas.',
+        'tech.angular': 'Framework front-end para aplicações web robustas (em estudo).',
         'tech.java': 'Linguagem robusta para sistemas backend corporativos.',
         'tech.javascript': 'Interatividade no frontend e lógica no backend.',
         'tech.nodejs': 'Ambiente de execução JavaScript para APIs e aplicações backend escaláveis.',
@@ -52,7 +54,7 @@ const translations = {
         'tech.sql': 'Modelagem e consulta eficiente de bancos de dados.',
         'tech.git': 'Controle de versão e colaboração em equipe.',
         'tech.docker': 'Containerização para ambientes de deploy consistentes.',
-        'tech.spring': 'Framework Spring Boot para APIs REST e serviços backend escaláveis.',
+        'tech.spring': 'Framework Spring Boot para desenvolvimento de microserviços e APIs REST.',
         'tech.security': 'Proteção de dados, vulnerabilidades e OWASP.',
         'tech.ai': 'Integração com LLMs e ferramentas de GenAI.',
         'tech.agile': 'Metodologias ágeis (Scrum/Kanban) para projetos.',
@@ -120,7 +122,7 @@ const translations = {
         // Tooltips
         'tooltip.university': 'Universidade de Pernambuco',
         'tooltip.englishLevel': 'Nível intermediário de inglês. Sendo capaz de compreender textos complexos e me comunicar em alguns contextos.',
-        'tooltip.degree': 'Cursando o 4º periodo da faculdade de Engenharia de Software na UPE',
+        'tooltip.degree': 'Cursando o 5º período da faculdade de Engenharia de Software na UPE',
         'tooltip.viewCertificate': 'Clique no ícone para visualizar o certificado',
     },
     
@@ -150,7 +152,7 @@ const translations = {
         
         // About Section
         'about.title': 'About Me',
-        'about.p1': 'Currently in my fourth term of Software Engineering, my journey is marked by discipline and the constant pursuit of excellence.',
+        'about.p1': 'Currently in my fifth term of Software Engineering, my journey is marked by discipline and the constant pursuit of excellence.',
         'about.university': 'UPE',
         'about.universityDesc': 'Software Eng. (2028)',
         'about.certificates': 'Certificates & Courses',
@@ -168,11 +170,13 @@ const translations = {
         'tech.javascript': 'Frontend interactivity and backend logic.',
         'tech.nodejs': 'JavaScript runtime for APIs and scalable backend applications.',
         'tech.python': 'Versatile language for automation, data analysis, and backend development.',
+        'tech.react': 'JavaScript library for building reactive user interfaces.',
+        'tech.angular': 'Front-end framework for building robust web applications (learning).',
         'tech.html': 'Semantic structure and responsive visual styling.',
         'tech.sql': 'Efficient database modeling and querying.',
         'tech.git': 'Version control and team collaboration.',
         'tech.docker': 'Containerization for consistent deployment environments.',
-        'tech.spring': 'Spring Boot framework for REST APIs and scalable backend services.',
+        'tech.spring': 'Spring Boot framework for building microservices and REST APIs.',
         'tech.security': 'Data protection, vulnerabilities, and OWASP.',
         'tech.ai': 'Integration with LLMs and GenAI tools.',
         'tech.agile': 'Agile methodologies (Scrum/Kanban) for projects.',
@@ -238,7 +242,7 @@ const translations = {
         // Tooltips
         'tooltip.university': 'UPE - Universidade de Pernambuco',
         'tooltip.englishLevel': 'Intermediate English level according to the Common European Framework of Reference for Languages',
-        'tooltip.degree': 'Currently in the 4th term of Software Engineering at UPE',
+        'tooltip.degree': 'Currently in the 5th term of Software Engineering at UPE',
         'tooltip.viewCertificate': 'Click the icon to view the certificate',
     },
     
@@ -260,7 +264,7 @@ const translations = {
         
         // About Section
         'about.title': 'Sobre Mí',
-        'about.p1': 'Actualmente cursando el cuarto período de Ingeniería de Software, mi trayectoria está marcada por la disciplina y la búsqueda constante de excelencia.',
+        'about.p1': 'Actualmente cursando el quinto período de Ingeniería de Software, mi trayectoria está marcada por la disciplina y la búsqueda constante de excelencia.',
         'about.university': 'UPE',
         'about.universityDesc': 'Ing. Software (2028)',
         'about.certificates': 'Certificados y Cursos',
@@ -278,6 +282,8 @@ const translations = {
         'tech.javascript': 'Interactividad en frontend y lógica en backend.',
         'tech.nodejs': 'Entorno de ejecución de JavaScript para APIs y aplicaciones backend escalables.',
         'tech.python': 'Lenguaje versátil para automatización, análisis de datos y desarrollo backend.',
+        'tech.react': 'Biblioteca JavaScript para construir interfaces de usuario reactivas.',
+        'tech.angular': 'Framework front-end para construir aplicaciones web robustas (estudiando).',
         'tech.html': 'Estructura semántica y estilización visual responsiva.',
         'tech.sql': 'Modelado y consulta eficiente de bases de datos.',
         'tech.git': 'Control de versiones y colaboración en equipo.',
@@ -285,6 +291,7 @@ const translations = {
         'tech.security': 'Protección de datos, vulnerabilidades y OWASP.',
         'tech.ai': 'Integración con LLMs y herramientas de GenAI.',
         'tech.agile': 'Metodologías ágiles (Scrum/Kanban) para proyectos.',
+        'tech.spring': 'Framework Spring Boot para el desarrollo de microservicios y APIs REST.',
 
         // Other Projects
         'projects.title': 'Proyectos',
@@ -347,7 +354,7 @@ const translations = {
         // Tooltips
         'tooltip.university': 'UPE - Universidade de Pernambuco',
         'tooltip.englishLevel': 'Nivel intermedio de inglés según el Marco Común Europeo de Referencia para las Lenguas',
-        'tooltip.degree': 'Cursando actualmente el 4to período de Ingeniería de Software en UPE',
+        'tooltip.degree': 'Cursando actualmente el 5to período de Ingeniería de Software en UPE',
         'tooltip.viewCertificate': 'Haz clic en el icono para ver el certificado',
     },
     
@@ -369,7 +376,7 @@ const translations = {
         
         // About Section
         'about.title': '关于我',
-        'about.p1': '目前正在攻读软件工程第四学期，我的旅程以纪律和对卓越的不断追求为特征。',
+        'about.p1': '目前正在攻读软件工程第五学期，我的旅程以纪律和对卓越的不断追求为特征。',
         'about.university': 'UPE',
         'about.universityDesc': '软件工程 (2028)',
         'about.certificates': '证书与课程',
@@ -387,6 +394,8 @@ const translations = {
         'tech.javascript': '前端交互和后端逻辑。',
         'tech.nodejs': '用于 API 和可扩展后端应用的 JavaScript 运行时。',
         'tech.python': '适用于自动化、数据分析和后端开发的多功能语言。',
+        'tech.react': '用于构建响应式用户界面的 JavaScript 库。',
+        'tech.angular': '用于构建强大 Web 应用的前端框架（学习中）。',
         'tech.html': '语义结构和响应式视觉样式。',
         'tech.sql': '高效的数据库建模和查询。',
         'tech.git': '版本控制和团队协作。',
@@ -394,6 +403,7 @@ const translations = {
         'tech.security': '数据保护、漏洞和 OWASP。',
         'tech.ai': '与 LLM 和 GenAI 工具集成。',
         'tech.agile': '项目的敏捷方法论（Scrum/Kanban）。',
+        'tech.spring': '用于构建微服务和 REST API 的 Spring Boot 框架。',
 
         // Other Projects
         'projects.title': '项目',
@@ -456,7 +466,7 @@ const translations = {
         // Tooltips
         'tooltip.university': 'UPE - 伯南布哥大学',
         'tooltip.englishLevel': '根据欧洲语言共同参考框架的中级英语水平',
-        'tooltip.degree': '目前在 UPE 就读软件工程第四学期',
+        'tooltip.degree': '目前在 UPE 就读软件工程第五学期',
         'tooltip.viewCertificate': '点击图标查看证书',
     },
     
@@ -478,7 +488,7 @@ const translations = {
         
         // About Section
         'about.title': 'Über mich',
-        'about.p1': 'Ich befinde mich derzeit im vierten Semester des Software-Engineerings, und mein Weg ist geprägt von Disziplin und dem ständigen Streben nach Exzellenz.',
+        'about.p1': 'Ich befinde mich derzeit im fünften Semester des Software-Engineerings, und mein Weg ist geprägt von Disziplin und dem ständigen Streben nach Exzellenz.',
         'about.university': 'UPE',
         'about.universityDesc': 'Software-Eng. (2028)',
         'about.certificates': 'Zertifikate & Kurse',
@@ -496,6 +506,8 @@ const translations = {
         'tech.javascript': 'Frontend-Interaktivität und Backend-Logik.',
         'tech.nodejs': 'JavaScript-Laufzeitumgebung für APIs und skalierbare Backend-Anwendungen.',
         'tech.python': 'Vielseitige Sprache für Automatisierung, Datenanalyse und Backend-Entwicklung.',
+        'tech.react': 'JavaScript-Bibliothek zum Erstellen reaktiver Benutzeroberflächen.',
+        'tech.angular': 'Frontend-Framework zum Erstellen robuster Webanwendungen (lernend).',
         'tech.html': 'Semantische Struktur und responsives visuelles Styling.',
         'tech.sql': 'Effiziente Datenbankmodellierung und -abfrage.',
         'tech.git': 'Versionskontrolle und Teamzusammenarbeit.',
@@ -504,10 +516,10 @@ const translations = {
         'tech.ai': 'Integration mit LLMs und GenAI-Tools.',
         'tech.agile': 'Agile Methoden (Scrum/Kanban) für Projekte.',
 
-        // Other Projects
+            'tech.spring': 'Spring Boot Framework zum Erstellen von Microservices und REST-APIs.',
         'projects.title': 'Projekte',
         'projects.showMore': 'Mehr Projekte anzeigen',
-        'projects.showLess': 'Weniger anzeigen',
+            'tech.agile': 'Agile Methoden (Scrum/Kanban) zum Erstellen robuster Webanwendungen.',
         'projects.almanaque.title': 'Almanaque',
         'projects.almanaque.description': 'Bibliotheksverwaltungssystem, das in Java (CLI) mit PostgreSQL-Datenpersistenz entwickelt wurde. Das Projekt folgt Best Practices für mehrschichtige Architektur und verwendet das MVC-Muster.',
         'projects.petPrime.title': 'Pet-Prime',
@@ -565,7 +577,7 @@ const translations = {
         // Tooltips
         'tooltip.university': 'UPE - Universität von Pernambuco',
         'tooltip.englishLevel': 'Mittleres Englischniveau nach dem Gemeinsamen Europäischen Referenzrahmen für Sprachen',
-        'tooltip.degree': 'Derzeit im 4. Semester Software-Engineering an der UPE',
+        'tooltip.degree': 'Derzeit im 5. Semester Software-Engineering an der UPE',
         'tooltip.viewCertificate': 'Klicken Sie auf das Symbol, um das Zertifikat anzuzeigen',
     }
 };
