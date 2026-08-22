@@ -76,9 +76,9 @@ const translations = {
         'experience.current': 'Atual',
         'experience.showMore': 'Ver Mais Experiências',
         'experience.showLess': 'Ver Menos',
-        'experience.nap.company': 'Auxiliar Pedagógico',
+        'experience.nap.company': 'Porteiro',
         'experience.nap.position': 'Prestador de serviços',
-        'experience.nap.description': 'Auxílio em atividades de apoio pedagógico e suporte logístico.',
+        'experience.nap.description': 'Desenvolvimento de competências como <strong>trabalho em equipe, proatividade, adaptabilidade, gestão do tempo e aprendizado contínuo</strong>.<br><br><ul><li>Atendimento e suporte a estudantes e docentes, desenvolvendo <strong>comunicação clara, atenção e capacidade de compreender diferentes demandas</strong>.</li><li>Acompanhamento de solicitações e comunicação entre diferentes setores, fortalecendo <strong>organização, responsabilidade e cumprimento de prazos</strong>.</li></ul>',
 
         
         // Footer
@@ -195,9 +195,9 @@ const translations = {
         'experience.current': 'Current',
         'experience.showMore': 'Show More Experience',
         'experience.showLess': 'Show Less',
-        'experience.nap.company': 'Pedagogical Assistant',
+        'experience.nap.company': 'Doorman',
         'experience.nap.position': 'Service Provider',
-        'experience.nap.description': 'Assistance in pedagogical support activities and logistical support.',
+        'experience.nap.description': 'Development of skills such as <strong>teamwork, proactivity, adaptability, time management and continuous learning</strong>.<br><br><ul><li>Providing assistance and support to students and faculty, developing <strong>clear communication, attentiveness and the ability to understand different needs</strong>.</li><li>Tracking requests and communication across departments, strengthening <strong>organization, responsibility and meeting deadlines</strong>.</li></ul>',
         
         // Footer
         'footer.title': 'Let\'s talk?',
@@ -304,9 +304,9 @@ const translations = {
         'experience.current': 'Actual',
         'experience.showMore': 'Ver Más Experiencias',
         'experience.showLess': 'Ver Menos',
-        'experience.nap.company': 'Auxiliar Pedagógico',
+        'experience.nap.company': 'Portero',
         'experience.nap.position': 'Prestador de serviços',
-        'experience.nap.description': 'Auxílio en atividades de apoio pedagógico y suporte logístico.',
+        'experience.nap.description': 'Desarrollo de competencias como <strong>trabajo en equipo, proactividad, adaptabilidad, gestión del tiempo y aprendizaje continuo</strong>.<br><br><ul><li>Atención y apoyo a estudiantes y docentes, desarrollando <strong>comunicación clara, atención y capacidad para comprender diferentes demandas</strong>.</li><li>Seguimiento de solicitudes y comunicación entre distintos sectores, fortaleciendo <strong>organización, responsabilidad y cumplimiento de plazos</strong>.</li></ul>',
         
         // Footer
         'footer.title': '¿Hablamos?',
@@ -413,9 +413,9 @@ const translations = {
         'experience.current': '当前',
         'experience.showMore': '查看更多经验',
         'experience.showLess': '收起',
-        'experience.nap.company': '教学助理',
+        'experience.nap.company': '门卫',
         'experience.nap.position': '服务提供者',
-        'experience.nap.description': '协助教学支持活动和物流支持。',
+        'experience.nap.description': '培养诸如 <strong>团队合作、主动性、适应性、时间管理和持续学习</strong> 等能力。<br><br><ul><li>为学生和教职工提供接待与支持，培养 <strong>清晰沟通、专注力和理解不同需求的能力</strong>。</li><li>跟进申请并在各部门间沟通，加强 <strong>组织性、责任感和遵守截止日期</strong>。</li></ul>',
         
         // Footer
         'footer.title': '让我们谈谈？',
@@ -522,9 +522,9 @@ const translations = {
         'experience.current': 'Aktuell',
         'experience.showMore': 'Mehr Erfahrung anzeigen',
         'experience.showLess': 'Weniger anzeigen',
-        'experience.nap.company': 'Pädagogischer Assistent',
+        'experience.nap.company': 'Pförtner',
         'experience.nap.position': 'Dienstleister',
-        'experience.nap.description': 'Unterstützung bei pädagogischen Unterstützungsaktivitäten und logistischem Support.',
+        'experience.nap.description': 'Entwicklung von Kompetenzen wie <strong>Teamarbeit, Proaktivität, Anpassungsfähigkeit, Zeitmanagement und kontinuierliches Lernen</strong>.<br><br><ul><li>Betreuung und Unterstützung von Studierenden und Lehrkräften, Entwicklung von <strong>klarer Kommunikation, Aufmerksamkeit und der Fähigkeit, unterschiedliche Anforderungen zu verstehen</strong>.</li><li>Verfolgung von Anfragen und Kommunikation zwischen verschiedenen Abteilungen, Stärkung von <strong>Organisation, Verantwortung und Termintreue</strong>.</li></ul>',
         
         // Footer
         'footer.title': 'Lass uns reden?',
