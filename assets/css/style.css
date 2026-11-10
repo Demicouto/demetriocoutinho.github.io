@@ -1015,6 +1015,10 @@ body.menu-open {
     object-fit: contain;
 }
 
+[data-theme="dark"] .tech-icon-theme-aware {
+    filter: brightness(0) invert(1);
+}
+
 .tech-name {
     font-weight: 600;
     margin: 0;
@@ -1355,7 +1359,37 @@ body.menu-open {
     border: 2px solid white;
 }
 
+.experience-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.experience-heading > div { min-width: 0; }
+.experience-category { margin-bottom: 8px; color: var(--primary-color); font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.experience-period { flex-shrink: 0; margin: 0; color: var(--text-secondary); font-size: .8rem; white-space: nowrap; }
+.experience-details { margin: 0; padding-left: 18px; color: var(--text-secondary); font-size: .9rem; line-height: 1.7; }
+.experience-details li + li { margin-top: 9px; }
+.experience-details strong { color: var(--text-primary); font-weight: 600; }
+#experiencia .timeline-item:last-child { margin-bottom: 0; }
+
+@media (max-width: 575px) {
+    .experience-heading { flex-direction: column; gap: 0; }
+    .experience-period { margin-bottom: 16px; }
+    #experiencia .timeline-item { padding-left: 22px; }
+}
+
 /* Info cards in Sobre section */
+.university-logo {
+    width: 64px;
+    height: 29px;
+    /* Enquadra apenas a sigla, sem alterar o arquivo original da marca. */
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
+}
+
 .info-card {
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
@@ -1758,11 +1792,10 @@ body.menu-open .hamburger-icon span:nth-child(3) {
 }
 
 /* ========================================
-   Expandable Drawers (Projects, Experience & Techs)
+   Expandable Drawers (Projects & Techs)
    ======================================== */
 
 .projects-expandable-wrapper,
-.experience-expandable-wrapper,
 .techs-expandable-wrapper {
     position: relative;
     overflow: hidden;
@@ -1782,11 +1815,6 @@ body.menu-open .hamburger-icon span:nth-child(3) {
     }
 }
 
-/* Experience heights */
-.experience-expandable-wrapper {
-    max-height: 280px; /* Shows 1st item + peek of 2nd */
-}
-
 /* Techs heights */
 .techs-expandable-wrapper {
     max-height: 180px; /* Shows 1st row of tech cards */
@@ -1794,14 +1822,12 @@ body.menu-open .hamburger-icon span:nth-child(3) {
 
 /* Note: we'll handle the expanded max-height via JS for precision */
 .projects-expandable-wrapper.expanded,
-.experience-expandable-wrapper.expanded,
 .techs-expandable-wrapper.expanded {
     /* Height set via inline style in JS */
 }
 
 /* Enhanced smooth mask */
 .projects-expandable-wrapper::after,
-.experience-expandable-wrapper::after,
 .techs-expandable-wrapper::after {
     content: '';
     position: absolute;
@@ -1824,27 +1850,23 @@ body.menu-open .hamburger-icon span:nth-child(3) {
 }
 
 [data-theme="dark"] .projects-expandable-wrapper::after,
-[data-theme="dark"] .experience-expandable-wrapper::after,
 [data-theme="dark"] .techs-expandable-wrapper::after {
     background: linear-gradient(to bottom, transparent 0%, var(--bg-primary) 100%);
 }
 
 .projects-expandable-wrapper.expanded::after,
-.experience-expandable-wrapper.expanded::after,
 .techs-expandable-wrapper.expanded::after {
     opacity: 0;
 }
 
 /* Apply a subtle scale/fade effect to the items that are "under" the mask */
 .projects-expandable-wrapper .project-card,
-.experience-expandable-wrapper .timeline-item,
 .techs-expandable-wrapper .tech-card {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Show More Button Hover Interaction */
 #showMoreProjectsBtn,
-#showMoreExperienceBtn,
 #showMoreTechsBtn {
     z-index: 10;
 }
