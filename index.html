@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYL1VH5W53"></script>
@@ -19,7 +19,7 @@
     <!-- Theme init (prevents flash on reload) -->
     <script>
         (function() {
-            var t = localStorage.getItem('theme') || 'light';
+            var t = localStorage.getItem('theme') || 'dark';
             document.documentElement.setAttribute('data-theme', t);
         })();
     </script>
@@ -40,6 +40,7 @@
 
     <!-- Custom CSS (Local File) -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="100">
 
@@ -263,9 +264,8 @@
                              data-bs-title="Universidade de Pernambuco"
                              data-i18n-tooltip="tooltip.university"
                              style="cursor: pointer;">
-                            <i class="fas fa-graduation-cap text-primary fs-3"></i>
+                            <img class="university-logo" src="assets/images/brands/upe.png" width="431" height="306" loading="lazy" decoding="async" alt="Universidade de Pernambuco (UPE)" data-i18n-alt="tooltip.university">
                             <div class="d-flex flex-column">
-                                <h6 class="mb-0 fw-bold" data-i18n="about.university">UPE</h6>
                                 <small class="text-muted" data-i18n="about.universityDesc">Eng. Software (2028)</small>
                             </div>
                         </div>
@@ -327,6 +327,16 @@
             <div class="row g-3 justify-content-center mb-5">
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
+                        <img class="tech-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo">
+                        <h6 class="tech-name">React</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.react">Biblioteca JavaScript para construir interfaces de usuário reativas.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
                         <img class="tech-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo">
                         <h6 class="tech-name">Java</h6>
                         <div class="tech-overlay">
@@ -347,10 +357,40 @@
 
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/typescript.svg" alt="TypeScript logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">TypeScript</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.typescript">Tipagem estática para aplicações web, mobile e APIs.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
                         <img class="tech-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo">
                         <h6 class="tech-name">Node.js</h6>
                         <div class="tech-overlay">
                             <span class="tech-desc" data-i18n="tech.nodejs">Ambiente de execução JavaScript para APIs e aplicações backend escaláveis.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/nestjs.svg" alt="NestJS logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">NestJS</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.nestjs">APIs Node.js organizadas em módulos, controllers e services.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img tech-icon-theme-aware" src="assets/images/tech/express.svg" alt="Express logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Express</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.express">APIs REST e regras de negócio para aplicações Node.js.</span>
                         </div>
                     </div>
                 </div>
@@ -377,10 +417,20 @@
 
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
-                        <img class="tech-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo">
-                        <h6 class="tech-name">React</h6>
+                        <img class="tech-icon-img" src="assets/images/tech/react-native.svg" alt="React Native logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">React Native</h6>
                         <div class="tech-overlay">
-                            <span class="tech-desc" data-i18n="tech.react">Biblioteca JavaScript para construir interfaces de usuário reativas.</span>
+                            <span class="tech-desc" data-i18n="tech.reactNative">Interfaces mobile com React e código compartilhado para web.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img tech-icon-theme-aware" src="assets/images/tech/expo.svg" alt="Expo logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Expo</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.expo">Desenvolvimento, navegação e recursos nativos no Game List.</span>
                         </div>
                     </div>
                 </div>
@@ -404,13 +454,53 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img tech-icon-theme-aware" src="assets/images/tech/prisma.svg" alt="Prisma logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Prisma</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.prisma">Modelagem, consultas e migrations em bancos relacionais.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/firebase.svg" alt="Firebase logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Firebase</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.firebase">Consulta de medições de sensores no Realtime Database.</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <img class="tech-icon-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo">
                         <h6 class="tech-name">HTML/CSS</h6>
                         <div class="tech-overlay">
                             <span class="tech-desc" data-i18n="tech.html">Estrutura semântica e estilização visual responsiva.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/tailwindcss.svg" alt="Tailwind CSS logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Tailwind CSS</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.tailwind">Estilização de interfaces com classes utilitárias.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-wind text-info tech-icon" aria-hidden="true"></i>
+                        <h6 class="tech-name">NativeWind</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.nativewind">Classes utilitárias no React Native e no Expo.</span>
                         </div>
                     </div>
                 </div>
@@ -434,6 +524,36 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <i class="fas fa-plug text-primary tech-icon" aria-hidden="true"></i>
+                        <h6 class="tech-name">JDBC</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.jdbc">Conexão e consultas entre aplicações Java e PostgreSQL.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/vitest.svg" alt="Vitest logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Vitest</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.vitest">Testes automatizados das regras de negócio e da API.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/swagger.svg" alt="Swagger logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Swagger</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.swagger">Documentação interativa de contratos e endpoints.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Divisor -->
@@ -443,6 +563,16 @@
 
             <!-- Aprendendo Agora -->
             <div class="row g-3 justify-content-center">    
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="tech-card">
+                        <img class="tech-icon-img" src="assets/images/tech/maven.svg" alt="Maven logo" width="32" height="32" loading="lazy" decoding="async">
+                        <h6 class="tech-name">Maven</h6>
+                        <div class="tech-overlay">
+                            <span class="tech-desc" data-i18n="tech.maven">Gerenciamento de dependências e build de projetos Java.</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="tech-card">
                         <i class="fas fa-shield-halved tech-icon text-success"></i>
@@ -458,7 +588,7 @@
                         <i class="fas fa-brain tech-icon text-info"></i>
                         <h6 class="tech-name">IA</h6>
                         <div class="tech-overlay">
-                            <span class="tech-desc" data-i18n="tech.ai">Integração com LLMs e ferramentas de GenAI.</span>
+                            <span class="tech-desc" data-i18n="tech.ai">Integração de modelos de IA e execução de inferências.</span>
                         </div>
                     </div>
                 </div>
@@ -517,6 +647,63 @@
 
         <div class="projects-expandable-wrapper" id="projectsWrapper">
             <div class="row g-4">
+
+                <!-- Game List: apresentação aprovada em prévia -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <article class="custom-card project-preview-card d-flex flex-column" aria-labelledby="gameListCardTitle">
+                        <button class="project-preview-image" type="button" data-project-open="gameListDialog" aria-haspopup="dialog" aria-controls="gameListDialog" aria-labelledby="gameListCardTitle">
+                            <span class="project-preview-screens">
+                                <img src="assets/images/projects/game-list/inicio.png" width="1080" height="2400" loading="lazy" decoding="async" alt="Tela inicial do Game List" data-i18n-alt="projects.gameList.homeAlt">
+                                <img src="assets/images/projects/game-list/selecao.png" width="1080" height="2400" loading="lazy" decoding="async" alt="Seleção de jogos no Game List" data-i18n-alt="projects.gameList.selectionAlt">
+                            </span>
+                        </button>
+                        <div class="project-preview-body d-flex flex-column flex-grow-1">
+                            <p class="project-preview-meta" data-i18n="projects.gameList.meta">Mobile e web · Projeto em equipe</p>
+                            <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                <h4 class="fw-bold mb-0" id="gameListCardTitle"><button class="project-title-button" type="button" data-project-open="gameListDialog" aria-haspopup="dialog" aria-controls="gameListDialog">Game List</button></h4>
+                                <a href="https://github.com/Demicouto/game-list-frontend" target="_blank" rel="noopener noreferrer" class="text-secondary project-github-link" aria-label="Game List — GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="text-muted small flex-grow-1 mb-4" data-i18n="projects.gameList.cardSummary">Biblioteca pessoal de jogos com progresso, favoritos e avaliações, integrada a uma API com autenticação.</p>
+                            <ul class="project-technologies project-preview-techs">
+                                <li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Mai-Dai: apresentação aprovada em prévia -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <article class="custom-card project-preview-card d-flex flex-column" aria-labelledby="maidaiCardTitle">
+                        <button class="project-preview-image project-preview-landscape" type="button" data-project-open="maidaiDialog" aria-haspopup="dialog" aria-controls="maidaiDialog" aria-labelledby="maidaiCardTitle">
+                            <img src="assets/images/projects/maidai/visao-geral.png" width="1365" height="1000" loading="lazy" decoding="async" alt="Interface de monitoramento solar do Mai-Dai" data-i18n-alt="projects.maidai.overviewAlt">
+                        </button>
+                        <div class="project-preview-body d-flex flex-column flex-grow-1">
+                            <p class="project-preview-meta" data-i18n="projects.maidai.meta">Monitoramento fotovoltaico · FACEPE</p>
+                            <p class="project-access-badge" data-i18n="projects.maidai.accessBadge">Repositório privado · Acesso sob consulta</p>
+                            <h4 class="fw-bold mb-3" id="maidaiCardTitle"><button class="project-title-button" type="button" data-project-open="maidaiDialog" aria-haspopup="dialog" aria-controls="maidaiDialog">Mai-Dai</button></h4>
+                            <p class="text-muted small flex-grow-1 mb-4" data-i18n="projects.maidai.cardSummary">Monitoramento fotovoltaico com sensores ESP32, integração com Firebase e análise de dados históricos por inteligência artificial.</p>
+                            <ul class="project-technologies project-preview-techs"><li>TypeScript</li><li>NestJS</li><li>TensorFlow.js</li><li>Firebase</li></ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Marie Claire: vitrine e administração aprovadas em prévia -->
+                <div class="col-md-6 col-lg-4 project-card">
+                    <article class="custom-card project-preview-card d-flex flex-column" aria-labelledby="marieClaireCardTitle">
+                        <button class="project-preview-image project-preview-landscape" type="button" data-project-open="marieClaireDialog" aria-haspopup="dialog" aria-controls="marieClaireDialog" aria-labelledby="marieClaireCardTitle">
+                            <img src="assets/images/projects/marie-claire/inicio.png" width="1365" height="1000" loading="lazy" decoding="async" alt="Página inicial do Marie Claire Doceria" data-i18n-alt="projects.marieclaire.homeAlt">
+                        </button>
+                        <div class="project-preview-body d-flex flex-column flex-grow-1">
+                            <p class="project-preview-meta" data-i18n="projects.marieclaire.meta">Full-stack · Em desenvolvimento</p>
+                            <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                <h4 class="fw-bold mb-0" id="marieClaireCardTitle"><button class="project-title-button" type="button" data-project-open="marieClaireDialog" aria-haspopup="dialog" aria-controls="marieClaireDialog">Marie Claire Doceria</button></h4>
+                                <a href="https://github.com/Demicouto/marie-claire-doceria-fullstack" target="_blank" rel="noopener noreferrer" class="text-secondary project-github-link" aria-label="Marie Claire Doceria — GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="text-muted small flex-grow-1 mb-4" data-i18n="projects.marieclaire.cardSummary">Vitrine digital e gestão de uma doceria, com catálogo, carrinho, pedidos pelo WhatsApp e painel administrativo.</p>
+                            <ul class="project-technologies project-preview-techs"><li>Next.js</li><li>TypeScript</li><li>Express</li><li>PostgreSQL</li></ul>
+                        </div>
+                    </article>
+                </div>
 
                 <!-- Projeto Almanaque -->
                 <div class="col-md-6 col-lg-4 project-card">
@@ -579,28 +766,6 @@
                     </div>
                 </div>
 
-                <!-- Marie Claire Doceria -->
-                <div class="col-md-6 col-lg-4 project-card">
-                    <div class="custom-card p-4 d-flex flex-column">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div class="bg-warning bg-opacity-10 text-primary p-3 rounded-3">
-                                <i class="fas fa-cake-candles fa-2x"></i>
-                            </div>
-                            <a href="https://github.com/Demicouto/MarieClaire-Doceria" target="_blank" class="text-secondary" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </div>
-                        <h4 class="fw-bold" data-i18n="projects.marieclaire.title">Marie Claire Doceria</h4>
-                        <p class="text-muted small flex-grow-1" data-i18n="projects.marieclaire.description">Sistema full-stack para catálogo, carrinho, checkout autenticado e gestão administrativa de uma doceria, com foco em gestão de pedidos e informações pelo WhatsApp e controle operacional.</p>
-                        <div class="mt-3">
-                            <span class="badge bg-light text-dark border">Next.js</span>
-                            <span class="badge bg-light text-dark border">Node.js</span>
-                            <span class="badge bg-light text-dark border">Express</span>
-                            <span class="badge bg-light text-dark border">Prisma</span>
-                            <span class="badge bg-light text-dark border">PostgreSQL</span>
-                            <span class="badge bg-light text-dark border">TypeScript</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
             <div class="drawer-mask"></div>
         </div>
@@ -619,30 +784,44 @@
 <!-- Experiência -->
 <section id="experiencia" class="py-5">
     <div class="container">
-        <h2 class="fw-bold text-center mb-5" data-i18n="experience.title">Experiência Profissional</h2>
+        <h2 class="fw-bold text-center mb-5" data-i18n="experience.title">Experiência Profissional e Acadêmica</h2>
 
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="experience-expandable-wrapper" id="experienceWrapper">
-
-                    <!-- Item 1 -->
-                    <div class="timeline-item">
-                        <span class="badge bg-secondary mb-2">2025-2026</span>
-                        <span class="badge bg-primary mb-2" data-i18n="experience.current">Atual</span>
-                        <h5 class="fw-bold mb-1" data-i18n="experience.nap.company">Porteiro</h5>
-                        <p class="text-secondary fw-medium mb-2" data-i18n="experience.nap.position">Prestador de serviços</p>
-                        <p class="text-muted small" data-i18n="experience.nap.description" data-i18n-html>
-                            Desenvolvimento de competências como <strong>trabalho em equipe, proatividade, adaptabilidade, gestão do tempo e aprendizado contínuo</strong>.
-                        </p>
+                <article class="timeline-item" aria-labelledby="facepeExperienceTitle">
+                    <div class="experience-heading">
+                        <div>
+                            <p class="experience-category" data-i18n="experience.professionalLabel">Experiência profissional</p>
+                            <h3 class="h5 fw-bold mb-2" id="facepeExperienceTitle" data-i18n="experience.facepe.title">Bolsista FACEPE — Desenvolvedor Full-Stack</h3>
+                            <p class="text-secondary fw-medium mb-3" data-i18n="experience.facepe.project">Projeto Mai-Dai · Monitoramento de sistemas fotovoltaicos</p>
+                        </div>
+                        <p class="experience-period" data-i18n="experience.facepe.period">Out/2026 – atual</p>
                     </div>
+                    <ul class="experience-details">
+                        <li data-i18n="experience.facepe.interfaces" data-i18n-html>Desenvolvimento e modernização das interfaces web e da API do <strong>Mai-Dai</strong>, com HTML, CSS, JavaScript, TypeScript e NestJS.</li>
+                        <li data-i18n="experience.facepe.sensors" data-i18n-html>Integração de medições de <strong>sensores ESP32 com Firebase</strong>, com validação das leituras e tratamento de falhas de comunicação.</li>
+                        <li data-i18n="experience.facepe.ai" data-i18n-html>Integração e execução de um <strong>modelo de IA com 20 entradas normalizadas</strong> para análise de dados históricos.</li>
+                        <li data-i18n="experience.facepe.quality" data-i18n-html>Refatoração e testes automatizados, com comparação de <strong>dados, normalização e previsões em 5.080 registros</strong> para verificar a preservação dos resultados.</li>
+                    </ul>
+                </article>
 
-                <!-- Show More Button -->
-                <div class="text-center mt-4">
-                    <button id="showMoreExperienceBtn" class="btn btn-outline-primary rounded-pill px-5" type="button">
-                        <span data-i18n="experience.showMore">Ver Mais Experiências</span>
-                        <i class="fas fa-chevron-down ms-2"></i>
-                    </button>
-                </div>
+                <article class="timeline-item" aria-labelledby="academicExperienceTitle">
+                    <div class="experience-heading">
+                        <div>
+                            <p class="experience-category" data-i18n="experience.academicLabel">Experiência acadêmica</p>
+                            <h3 class="h5 fw-bold mb-2" id="academicExperienceTitle" data-i18n="experience.academic.title">Engenharia de Software — UPE</h3>
+                            <p class="text-secondary fw-medium mb-3" data-i18n="experience.academic.context">Projetos da graduação em Engenharia de Software</p>
+                        </div>
+                        <p class="experience-period" data-i18n="experience.current">Atual</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li data-i18n="experience.academic.fullstack" data-i18n-html>Desenvolvimento de aplicações <strong>Full-Stack</strong> em projetos da graduação, aplicando conceitos de POO, SOLID, Clean Code, APIs REST e persistência de dados.</li>
+                        <li data-i18n="experience.academic.architecture" data-i18n-html>Implementação de regras de negócio, integração entre frontend e backend e organização de projetos seguindo princípios de <strong>arquitetura de software</strong>.</li>
+                        <li data-i18n="experience.academic.collaboration" data-i18n-html>Colaboração com outros desenvolvedores utilizando <strong>Git/GitHub</strong> para versionamento, organização do código e integração das diferentes partes dos projetos.</li>
+                        <li data-i18n="experience.academic.problemSolving" data-i18n-html>Participação na resolução de problemas técnicos, revisão de código e tomada de decisões em conjunto com a equipe.</li>
+                        <li data-i18n="experience.academic.quality" data-i18n-html>Desenvolvimento de soluções com foco em <strong>organização, modularidade, manutenção e qualidade do software</strong>.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </div>
@@ -777,6 +956,130 @@
     </div>
 </div>
 
+<!-- Game List: detalhes do projeto fora da área recolhível -->
+<dialog class="project-details-dialog" id="gameListDialog" aria-labelledby="gameListTitle">
+    <div class="project-details-toolbar">
+        <p class="mb-0" data-i18n="projects.gameList.dialogLabel">Game List · Detalhes do projeto</p>
+        <button class="project-close-button" type="button" data-project-close autofocus><i class="fas fa-xmark" aria-hidden="true"></i><span class="visually-hidden" data-i18n="projects.details.close">Fechar detalhes do projeto</span></button>
+    </div>
+    <div class="project-details-grid">
+        <div class="project-details-visual">
+            <div class="project-details-screens">
+                <figure>
+                    <a href="assets/images/projects/game-list/inicio.png" target="_blank" rel="noopener noreferrer" aria-describedby="gameListImageHint"><img src="assets/images/projects/game-list/inicio.png" width="1080" height="2400" loading="lazy" decoding="async" alt="Tela inicial do Game List" data-i18n-alt="projects.gameList.homeAlt"></a>
+                    <figcaption data-i18n="projects.gameList.homeCaption">Início e biblioteca pessoal</figcaption>
+                </figure>
+                <figure>
+                    <a href="assets/images/projects/game-list/selecao.png" target="_blank" rel="noopener noreferrer" aria-describedby="gameListImageHint"><img src="assets/images/projects/game-list/selecao.png" width="1080" height="2400" loading="lazy" decoding="async" alt="Seleção de jogos no Game List" data-i18n-alt="projects.gameList.selectionAlt"></a>
+                    <figcaption data-i18n="projects.gameList.selectionCaption">Seleção de jogos</figcaption>
+                </figure>
+            </div>
+            <p class="project-image-hint" id="gameListImageHint" data-i18n="projects.details.imageHint">Capturas reais do aplicativo · clique para ampliar</p>
+        </div>
+        <div class="project-details-copy">
+            <p class="project-details-meta" data-i18n="projects.gameList.meta">Mobile e web · Projeto em equipe</p>
+            <h2 class="project-details-title" id="gameListTitle">Game List</h2>
+            <p class="project-details-summary" data-i18n="projects.gameList.summary">Uma biblioteca pessoal para reunir jogos de diferentes plataformas, acompanhar o progresso e organizar favoritos e avaliações.</p>
+            <p class="project-details-role"><strong data-i18n="projects.details.role">Minha contribuição:</strong> <span data-i18n="projects.gameList.role">Participei da construção das interfaces, do back-end e da integração do aplicativo com a API.</span></p>
+            <p class="project-technologies-label" data-i18n="projects.details.technologies">Tecnologias utilizadas</p>
+            <ul class="project-technologies"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>NativeWind</li><li>NestJS</li><li>Prisma</li><li>PostgreSQL</li></ul>
+            <div class="project-story">
+                <h3 data-i18n="projects.details.challenge">O desafio</h3>
+                <p data-i18n="projects.gameList.challenge">Manter a biblioteca vinculada à conta correta no navegador e no celular, além de impedir o cadastro duplicado do mesmo jogo na mesma plataforma.</p>
+                <h3 data-i18n="projects.details.solution">Como resolvemos</h3>
+                <p data-i18n="projects.gameList.solution">A equipe integrou autenticação com cookies no navegador e tokens no aplicativo. A API identifica o usuário pela sessão e combina validações e transações no banco para controlar duplicações.</p>
+            </div>
+            <div class="project-outcomes">
+                <div><strong data-i18n="projects.gameList.statusCount">4 status</strong><p data-i18n="projects.gameList.statusDescription">Quero jogar, jogando, pausado e concluído.</p></div>
+                <div><strong data-i18n="projects.gameList.platforms">Web + mobile</strong><p data-i18n="projects.gameList.platformDescription">Mesma base de interface conectada à API.</p></div>
+            </div>
+            <div class="project-repository-links">
+                <a href="https://github.com/Demicouto/game-list-frontend" target="_blank" rel="noopener noreferrer"><i class="fas fa-code" aria-hidden="true"></i><span data-i18n="projects.details.frontend">Ver front-end</span><span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/JucyaraFerreira/game-list-backend" target="_blank" rel="noopener noreferrer"><i class="fas fa-server" aria-hidden="true"></i><span data-i18n="projects.details.backend">Ver back-end</span><span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<!-- Mai-Dai: código privado e imagens da versão de desenvolvimento aprovada -->
+<dialog class="project-details-dialog" id="maidaiDialog" aria-labelledby="maidaiTitle">
+    <div class="project-details-toolbar">
+        <p class="mb-0" data-i18n="projects.maidai.dialogLabel">Mai-Dai · Detalhes do projeto</p>
+        <button class="project-close-button" type="button" data-project-close autofocus><i class="fas fa-xmark" aria-hidden="true"></i><span class="visually-hidden" data-i18n="projects.details.close">Fechar detalhes do projeto</span></button>
+    </div>
+    <div class="project-details-grid">
+        <div class="project-details-visual project-details-landscape">
+            <div class="project-details-gallery">
+                <figure><a href="assets/images/projects/maidai/visao-geral.png" target="_blank" rel="noopener noreferrer" aria-describedby="maidaiImageHint"><img src="assets/images/projects/maidai/visao-geral.png" width="1365" height="1000" loading="lazy" decoding="async" alt="Interface de monitoramento solar do Mai-Dai" data-i18n-alt="projects.maidai.overviewAlt"></a><figcaption data-i18n="projects.maidai.overviewCaption">Visão geral · CSV e inteligência artificial</figcaption></figure>
+                <figure><a href="assets/images/projects/maidai/sensores.png" target="_blank" rel="noopener noreferrer" aria-describedby="maidaiImageHint"><img src="assets/images/projects/maidai/sensores.png" width="1365" height="1064" loading="lazy" decoding="async" alt="Medições dos sensores ESP32 no Mai-Dai" data-i18n-alt="projects.maidai.sensorsAlt"></a><figcaption data-i18n="projects.maidai.sensorsCaption">Sensores ESP32 · Firebase</figcaption></figure>
+            </div>
+            <p class="project-image-hint" id="maidaiImageHint" data-i18n="projects.details.imageHint">Capturas reais do aplicativo · clique para ampliar</p>
+        </div>
+        <div class="project-details-copy">
+            <p class="project-details-meta" data-i18n="projects.maidai.detailMeta">Pesquisa aplicada · Bolsa FACEPE</p>
+            <h2 class="project-details-title" id="maidaiTitle">Mai-Dai</h2>
+            <p class="project-details-summary" data-i18n="projects.maidai.summary">Uma plataforma para acompanhar medições de sistemas fotovoltaicos e analisar dados históricos com um modelo de inteligência artificial.</p>
+            <p class="project-details-role"><strong data-i18n="projects.details.role">Minha contribuição:</strong> <span data-i18n="projects.maidai.role">Atuação full-stack como bolsista FACEPE, desde outubro de 2026, nas interfaces, na API, na integração com sensores e IA e nos testes automatizados.</span></p>
+            <p class="project-technologies-label" data-i18n="projects.details.technologies">Tecnologias utilizadas</p>
+            <ul class="project-technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>NestJS</li><li>TensorFlow.js</li><li>Firebase</li></ul>
+            <div class="project-story">
+                <h3 data-i18n="projects.details.challenge">O desafio</h3>
+                <p data-i18n="projects.maidai.challenge">Integrar fontes diferentes — registros históricos em CSV e medições de sensores ESP32 — preservando as fórmulas do modelo e identificando leituras ausentes ou inválidas.</p>
+                <h3 data-i18n="projects.details.solution">Como resolvemos</h3>
+                <p data-i18n="projects.maidai.solution">A API separa o fluxo CSV com inferência do fluxo de sensores pelo Firebase. A integração valida as medições e seus horários, trata falhas de comunicação e preserva a normalização das 20 entradas do modelo. A interface consulta a API automaticamente a cada 30 segundos.</p>
+            </div>
+            <div class="project-outcomes">
+                <div><strong data-i18n="projects.maidai.recordCount">5.080 registros</strong><p data-i18n="projects.maidai.recordDescription">Base histórica utilizada na comparação da refatoração.</p></div>
+                <div><strong data-i18n="projects.maidai.inputCount">20 entradas</strong><p data-i18n="projects.maidai.inputDescription">Normalização preservada para a inferência do modelo.</p></div>
+            </div>
+            <p class="project-model-note" data-i18n="projects.maidai.modelNote">A previsão usa o CSV histórico. As medições dos sensores são exibidas com sua disponibilidade; esse fluxo ainda não fornece todas as entradas exigidas pela IA.</p>
+            <aside class="project-private-repository">
+                <strong><i class="fas fa-lock" aria-hidden="true"></i><span data-i18n="projects.details.privateRepository">Repositório privado</span></strong>
+                <p data-i18n="projects.details.privateAccess">Acesso ao código mediante solicitação e minha autorização.</p>
+                <button type="button" data-project-contact><span data-i18n="projects.details.requestCode">Solicitar apresentação do código</span><span aria-hidden="true"> ↗</span></button>
+            </aside>
+        </div>
+    </div>
+</dialog>
+
+<!-- Marie Claire: capturas de desenvolvimento com dados demonstrativos -->
+<dialog class="project-details-dialog" id="marieClaireDialog" aria-labelledby="marieClaireTitle">
+    <div class="project-details-toolbar">
+        <p class="mb-0" data-i18n="projects.marieclaire.dialogLabel">Marie Claire Doceria · Detalhes do projeto</p>
+        <button class="project-close-button" type="button" data-project-close autofocus><i class="fas fa-xmark" aria-hidden="true"></i><span class="visually-hidden" data-i18n="projects.details.close">Fechar detalhes do projeto</span></button>
+    </div>
+    <div class="project-details-grid">
+        <div class="project-details-visual project-details-landscape">
+            <div class="project-details-gallery">
+                <figure><a href="assets/images/projects/marie-claire/inicio.png" target="_blank" rel="noopener noreferrer" aria-describedby="marieClaireImageHint"><img src="assets/images/projects/marie-claire/inicio.png" width="1365" height="1000" loading="lazy" decoding="async" alt="Página inicial do Marie Claire Doceria" data-i18n-alt="projects.marieclaire.homeAlt"></a><figcaption data-i18n="projects.marieclaire.homeCaption">Página inicial · Vitrine da doceria</figcaption></figure>
+                <figure><a href="assets/images/projects/marie-claire/admin.png" target="_blank" rel="noopener noreferrer" aria-describedby="marieClaireImageHint"><img src="assets/images/projects/marie-claire/admin.png" width="1440" height="1080" loading="lazy" decoding="async" alt="Painel administrativo do Marie Claire com dados demonstrativos" data-i18n-alt="projects.marieclaire.adminAlt"></a><figcaption data-i18n="projects.marieclaire.adminCaption">Painel administrativo · Pedidos, indicadores e estoque · Dados demonstrativos</figcaption></figure>
+                <figure><a href="assets/images/projects/marie-claire/catalogo.png" target="_blank" rel="noopener noreferrer" aria-describedby="marieClaireImageHint"><img src="assets/images/projects/marie-claire/catalogo.png" width="1365" height="1000" loading="lazy" decoding="async" alt="Catálogo do Marie Claire com produtos e preços demonstrativos" data-i18n-alt="projects.marieclaire.catalogAlt"></a><figcaption data-i18n="projects.marieclaire.catalogCaption">Catálogo · Produtos e carrinho</figcaption></figure>
+            </div>
+            <p class="project-image-hint" id="marieClaireImageHint" data-i18n="projects.marieclaire.imageHint">Capturas do ambiente de desenvolvimento, com dados de exemplo. Clique nas imagens para ampliar.</p>
+        </div>
+        <div class="project-details-copy">
+            <p class="project-details-meta" data-i18n="projects.marieclaire.meta">Full-stack · Em desenvolvimento</p>
+            <h2 class="project-details-title" id="marieClaireTitle">Marie Claire Doceria</h2>
+            <p class="project-details-summary" data-i18n="projects.marieclaire.summary">Um sistema para apresentar os produtos de uma doceria, organizar encomendas e apoiar a gestão de pedidos, produtos e ingredientes.</p>
+            <p class="project-details-role"><strong data-i18n="projects.details.role">Minha contribuição:</strong> <span data-i18n="projects.marieclaire.role">Participei das interfaces, da API e do banco de dados, conectando a experiência de compra às funcionalidades administrativas.</span></p>
+            <p class="project-technologies-label" data-i18n="projects.details.technologies">Tecnologias utilizadas</p>
+            <ul class="project-technologies"><li>Next.js</li><li>React</li><li>TypeScript</li><li>CSS Modules</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li><li>JWT</li></ul>
+            <div class="project-story">
+                <h3 data-i18n="projects.details.challenge">O desafio</h3>
+                <p data-i18n="projects.marieclaire.challenge">Conectar o catálogo e o carrinho à operação da doceria, com registro de pedidos, identificação do cliente e controle de produtos e estoque de ingredientes.</p>
+                <h3 data-i18n="projects.details.solution">Como resolvemos</h3>
+                <p data-i18n="projects.marieclaire.solution">A solução combina uma interface Next.js com uma API Express organizada por módulos e persistência no PostgreSQL via Prisma. O carrinho é mantido no navegador; o checkout autenticado registra o pedido e prepara uma mensagem com os itens para o WhatsApp. A área administrativa reúne pedidos, produtos e movimentações de ingredientes.</p>
+            </div>
+            <div class="project-outcomes">
+                <div><strong data-i18n="projects.marieclaire.areas">Vitrine + gestão</strong><p data-i18n="projects.marieclaire.areasDescription">Área pública para clientes e painel administrativo.</p></div>
+                <div><strong>WhatsApp</strong><p data-i18n="projects.marieclaire.whatsappDescription">Fluxo de encomendas com pedido estruturado.</p></div>
+            </div>
+            <p class="project-model-note"><strong data-i18n="projects.marieclaire.stageTitle">Projeto em desenvolvimento.</strong> <span data-i18n="projects.marieclaire.stageDescription">As capturas mostram a interface com dados de exemplo, incluindo o painel administrativo. Resultados de vendas e uso real ainda não foram medidos.</span></p>
+            <div class="project-repository-links"><a href="https://github.com/Demicouto/marie-claire-doceria-fullstack" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span data-i18n="projects.details.repository">Ver código no GitHub</span><span aria-hidden="true">↗</span></a></div>
+        </div>
+    </div>
+</dialog>
+
 <!-- build:contact-modal:start -->
 <!-- Contact Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
@@ -831,6 +1134,7 @@
 
 <!-- Custom JS (Local File) -->
 <script src="assets/js/script.js"></script>
+<script src="assets/js/projects.js"></script>
 
 <!-- i18n JS (Local File) - Load after main script to ensure tooltips are initialized -->
 <script src="assets/js/i18n.js"></script>

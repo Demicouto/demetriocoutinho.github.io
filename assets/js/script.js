@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileThemeToggle = document.getElementById('mobileThemeToggle');
     const html = document.documentElement;
 
-    // Carregar tema salvo ou usar padrão (light)
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // Carregar a preferência salva; na primeira visita, usar o tema escuro.
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     html.setAttribute('data-theme', savedTheme);
 
     function toggleTheme() {
@@ -188,48 +188,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Experience Expandable Drawer
-    const showMoreExperienceBtn = document.getElementById('showMoreExperienceBtn');
-    const experienceWrapper = document.getElementById('experienceWrapper');
-
-    if (showMoreExperienceBtn && experienceWrapper) {
-        showMoreExperienceBtn.addEventListener('click', function() {
-            const isExpanded = experienceWrapper.classList.contains('expanded');
-            
-            if (!isExpanded) {
-                // Expanding
-                const fullHeight = experienceWrapper.scrollHeight;
-                experienceWrapper.style.maxHeight = fullHeight + 'px';
-                experienceWrapper.classList.add('expanded');
-            } else {
-                // Collapsing
-                experienceWrapper.style.maxHeight = '';
-                experienceWrapper.classList.remove('expanded');
-            }
-            
-            const btnText = showMoreExperienceBtn.querySelector('[data-i18n]');
-            if (btnText) {
-                if (window.i18n && window.i18n.translate) {
-                    btnText.textContent = !isExpanded ? 
-                        window.i18n.translate('experience.showLess') : 
-                        window.i18n.translate('experience.showMore');
-                } else {
-                    btnText.textContent = !isExpanded ? 'Ver Menos' : 'Ver Mais Experiências';
-                }
-            }
-            
-            const icon = showMoreExperienceBtn.querySelector('i');
-            if (icon) {
-                icon.className = !isExpanded ? 'fas fa-chevron-up ms-2' : 'fas fa-chevron-down ms-2';
-            }
-        });
-    }
-
     // Techs Expandable Drawer
     const showMoreTechsBtn = document.getElementById('showMoreTechsBtn');
     const techsWrapper = document.getElementById('techsWrapper');
 
     if (showMoreTechsBtn && techsWrapper) {
+        function syncExpandedTechsHeight() {
+            if (!techsWrapper.classList.contains('expanded') || !techsWrapper.lastElementChild) return;
+            const contentBottom = techsWrapper.lastElementChild.getBoundingClientRect().bottom;
+            const wrapperTop = techsWrapper.getBoundingClientRect().top;
+            const paddingBottom = parseFloat(getComputedStyle(techsWrapper).paddingBottom) || 0;
+            techsWrapper.style.maxHeight = Math.ceil(contentBottom - wrapperTop + paddingBottom) + 'px';
+        }
+
         showMoreTechsBtn.addEventListener('click', function() {
             const isExpanded = techsWrapper.classList.contains('expanded');
             
@@ -260,6 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.className = !isExpanded ? 'fas fa-chevron-up ms-2' : 'fas fa-chevron-down ms-2';
             }
         });
+
+        if ('ResizeObserver' in window) {
+            const techsResizeObserver = new ResizeObserver(syncExpandedTechsHeight);
+            Array.from(techsWrapper.children).forEach(element => techsResizeObserver.observe(element));
+        }
+        window.addEventListener('resize', syncExpandedTechsHeight);
     }
 
     // Latest Posts Expandable Drawer (Mobile only)
