@@ -23,7 +23,7 @@ const translations = {
         // Hero Section
         'hero.name': 'Demétrio Coutinho',
         'hero.title': 'Engenharia de Software | Full Stack Developer',
-        'hero.description': 'Desenvolvedor apaixonado por criar soluções robustas com Java.',
+        'hero.description': 'Desenvolvedor apaixonado por criar soluções robustas com Java e NestJS.',
         'hero.viewProjects': 'Ver Projetos',
         'hero.contact': 'Entrar em Contato',
         
@@ -141,7 +141,7 @@ const translations = {
         // Hero Section
         'hero.name': 'Demétrio Coutinho',
         'hero.title': 'Software Engineering | Full Stack Developer',
-        'hero.description': 'Developer passionate about creating robust solutions with Java.',
+        'hero.description': 'Developer passionate about creating robust solutions with Java and NestJS.',
         'hero.viewProjects': 'View Projects',
         'hero.contact': 'Get in Touch',
         
@@ -248,7 +248,7 @@ const translations = {
         // Hero Section
         'hero.name': 'Demétrio Coutinho',
         'hero.title': 'Ingeniería de Software | Desarrollador Full Stack',
-        'hero.description': 'Desarrollador apasionado por crear soluciones robustas con Java.',
+        'hero.description': 'Desarrollador apasionado por crear soluciones robustas con Java y NestJS.',
         'hero.viewProjects': 'Ver Proyectos',
         'hero.contact': 'Ponerse en Contacto',
         
@@ -355,7 +355,7 @@ const translations = {
         // Hero Section
         'hero.name': 'Demétrio Coutinho',
         'hero.title': '软件工程 | 全栈开发者',
-        'hero.description': '热衷于使用 Java 创建强大解决方案的开发者。',
+        'hero.description': '热衷于使用 Java 和 NestJS 创建强大解决方案的开发者。',
         'hero.viewProjects': '查看项目',
         'hero.contact': '联系我',
         
@@ -462,7 +462,7 @@ const translations = {
         // Hero Section
         'hero.name': 'Demétrio Coutinho',
         'hero.title': 'Software-Engineering | Full-Stack-Entwickler',
-        'hero.description': 'Entwickler mit Leidenschaft für robuste Lösungen mit Java.',
+        'hero.description': 'Entwickler mit Leidenschaft für robuste Lösungen mit Java und NestJS.',
         'hero.viewProjects': 'Projekte ansehen',
         'hero.contact': 'Kontakt aufnehmen',
         
